@@ -1,0 +1,13 @@
+sources=(
+  "main.py"
+  "languages.json"
+)
+
+
+echo "sha256sums=("
+for source in "${sources[@]}"; do
+    v=$( sha256sum $source );
+
+    echo "    '$( sha256sum $source | awk '{print $1}')'";
+done
+echo ")"
