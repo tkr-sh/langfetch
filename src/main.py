@@ -1,15 +1,23 @@
+#!/usr/bin/env python
+
 from json import load
 from subprocess import run
-from log import logger
+from .log import logger
 from re import search
-from get_ascii_art import get_ascii_art
-from get_params import get_argv
-from print_infos import print_infos
+from .get_ascii_art import get_ascii_art
+from .get_params import get_argv
+from .print_infos import print_infos
 from os.path import isfile, expanduser
 
 
 # Load the language informations from the JSON
-LANGUAGES_JSON = load(open("/".join(__file__.split("/")[:-1]) + "/" + "languages.json", 'r', encoding="utf-8"))
+if isfile("/".join(__file__.split("/")[:-1]) + "/" + "languages.json"):
+    LANGUAGES_JSON = load(open("/".join(__file__.split("/")[:-1]) + "/" + "languages.json", 'r', encoding="utf-8"))
+elif isfile("/usr/share/langfetch/languages.json"):
+    LANGUAGES_JSON = load(open("/usr/share/langfetch/languages.json", 'r', encoding="utf-8"))
+else:
+    logger.error("No languages.json file found")
+    exit(127)
 
 
 # Functions
@@ -21,8 +29,19 @@ rgb_to_ansi = lambda s: f"\033[38;2;{';'.join(hex_to_list(s))}m"
 
 
 # The languages to display
-langs = ["Python", "gcc", "Bash", "Perl"]
+langs = []
 main_lang = "Python"
+max_popularity = -1
+for language, data in LANGUAGES_JSON.items():
+    if isfile(data["path"]):
+        langs.append(language)
+
+        if data["popularity"] > max_popularity:
+            max_popularity = data["popularity"]
+            main_lang = language
+
+# langs = ["Python", "gcc", "Bash", "Perl"]
+# main_lang = "Python"
 
 # The output of the languages
 lang_out = []
@@ -54,7 +73,7 @@ if isfile(expanduser("~") + "/.config/langfetch/config.json"):
         colors = data.get("colors", colors)
         color_lang = data.get("color", color_lang)
         sort = data.get("sort", sort)
-        langs = data.get("langs", sort)
+        langs = data.get("langs", langs)
 
 
 

@@ -68,13 +68,13 @@ def print_infos(ascii_art: list[str], lang_out: list[str], aligned: bool, align:
                             lang_out[i - first]
                         )
                 else:
-                    print(lang_out[i - first])
+                    print(" " * (aligned * -~max_len) + lang_out[i - first])
 
             for i in range(second, max(len(ascii_art), len(lang_out))):
                 if i < len(ascii_art):
                     print(ascii_art[i])
                 else:
-                    print(lang_out[i])
+                    print(" " * (aligned * -~max_len) + lang_out[i])
 
 
 
@@ -95,6 +95,6 @@ def print_infos(ascii_art: list[str], lang_out: list[str], aligned: bool, align:
 
                     if lang_it >= 0:
                         line += " " * (aligned * (max_len - len(remove_ansi(ascii_art[i]))))
-                        line += " " + lang_out[lang_it]
+                        line += " " + lang_out[i]
 
                 print(line)

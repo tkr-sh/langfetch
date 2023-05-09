@@ -13,9 +13,13 @@ def get_argv():
 
     # If the user want some help
     if "--help" in argv or "-h" in argv:
-        print("""Langfetch is a CLI system information tool written in Python3. Langfetch
-displays information about the programming languages on your system and
-their version.""")
+        print("""Langfetch is a CLI system information tool written in Python3. Langfetch displays information about the programming languages on your system and their version.
+    --lang, -l   Which language should be displayed in ASCII art
+    --align      Vertical align ("top", "center", "bottom")
+    --aligned    Should it be aligned or not (true, false)
+    --colors     Colors that should be used by the ascii art
+    --color      The colors of the name of the languages
+    --sort       Should the languages be sorted by name or not (true, false)""")
         exit(0)
 
     # Get the lang
