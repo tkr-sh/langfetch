@@ -4,7 +4,7 @@
 
 
 ## In short
-langfetch est un outil en ligne de commande permettant d'afficher la version des langages de programmations sur votre système dirlangfetch is a command-line tool that displays the version of programming languages on your system directly in the terminal. By default, the output comes with an ASCII art representing a logo of a programming language on your system.
+langfetch is a command-line tool that displays the version of programming languages on your system directly in the terminal. By default, the output comes with an ASCII art representing a logo of a programming language on your system.
 
 langfetch is highly customizable and supports over 40 different languages. You can customize langfetch using flags as well as a configuration file ~/.config/langfetch/config.json (More on customization).
 
