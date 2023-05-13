@@ -1,4 +1,4 @@
-PREFIX = /usr
+PREFIX = /usr/local
 SHAREDIR = ${PREFIX}/share
 MANDIR = ${SHAREDIR}/man
 
@@ -7,7 +7,7 @@ all:
 
 install:
 	@cp main.py old_main.py
-	@/usr/bin/python replace.py
+	@python replace.py
 	# Create the directorys if they don't exist
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
 	@mkdir -p $(DESTDIR)$(MANDIR)/man1

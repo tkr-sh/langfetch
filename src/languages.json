@@ -1,6 +1,6 @@
 {
     "ada": {
-        "path": "/bin/ada",
+        "path": "ada",
         "colors": [
             "#000000",
             "#001EC8",
@@ -11,7 +11,7 @@
         "popularity": 62
     },
     "apl": {
-        "path": "/bin/apl",
+        "path": "apl",
         "colors": [
             "#1FA246",
             "#DFFDE7"
@@ -21,7 +21,7 @@
         "popularity": 21
     },
     "bash": {
-        "path": "/bin/bash",
+        "path": "bash",
         "colors": [
             "#54AC25",
             "#ffffff"
@@ -31,7 +31,7 @@
         "popularity": 44
     },
     "bqn": {
-        "path": "/bin/bqn",
+        "path": "bqn",
         "colors": [
             "#2E5F60"
         ],
@@ -40,7 +40,7 @@
         "popularity": 0
     },
     "c#": {
-        "path": "/bin/dotnet",
+        "path": "dotnet",
         "colors": [
             "#A179DC",
             "#390091",
@@ -51,7 +51,7 @@
         "popularity": 79
     },
     "clang": {
-        "path": "/bin/clang",
+        "path": "clang",
         "colors": [
             "#659AD2",
             "#00599C",
@@ -62,7 +62,7 @@
         "popularity": 19
     },
     "clang++": {
-        "path": "/bin/clang++",
+        "path": "clang++",
         "colors": [
             "#659AD2",
             "#00599C",
@@ -73,7 +73,7 @@
         "popularity": 19
     },
     "clojure": {
-        "path": "/bin/clojure",
+        "path": "clojure",
         "colors": [
             "#62AD37",
             "#92DC4F",
@@ -85,7 +85,7 @@
         "popularity": 29
     },
     "crystal": {
-        "path": "/bin/crystal",
+        "path": "crystal",
         "colors": [
             "#000000"
         ],
@@ -94,7 +94,7 @@
         "popularity": 10
     },
     "d": {
-        "path": "/bin/dmd",
+        "path": "dmd",
         "colors": [
             "#B01C1C"
         ],
@@ -103,7 +103,7 @@
         "popularity": 40
     },
     "dart": {
-        "path": "/bin/dart",
+        "path": "dart",
         "colors": [
             "#0079B3",
             "#00A4E4",
@@ -115,7 +115,7 @@
         "popularity": 32
     },
     "deno": {
-        "path": "/bin/deno",
+        "path": "deno",
         "colors": [
             "#ffffff"
         ],
@@ -124,7 +124,7 @@
         "popularity": 16
     },
     "elixir": {
-        "path": "/bin/elixir",
+        "path": "elixir",
         "colors": [
             "#604B6E"
         ],
@@ -133,7 +133,7 @@
         "popularity": 24
     },
     "erlang": {
-        "path": "/bin/erl",
+        "path": "erl",
         "colors": [
             "#8C002F"
         ],
@@ -142,7 +142,7 @@
         "popularity": 34
     },
     "f#": {
-        "path": "/bin/dotnet",
+        "path": "dotnet",
         "colors": [
             "#378BBA",
             "#30B9DB"
@@ -152,7 +152,7 @@
         "popularity": 30
     },
     "fortran": {
-        "path": "/bin/gfortran",
+        "path": "gfortran",
         "colors": [
             "#744E97"
         ],
@@ -161,7 +161,7 @@
         "popularity": 77
     },
     "g++": {
-        "path": "/bin/g++",
+        "path": "g++",
         "colors": [
             "#659AD2",
             "#00599C",
@@ -172,7 +172,7 @@
         "popularity": 48
     },
     "gcc": {
-        "path": "/bin/gcc",
+        "path": "gcc",
         "colors": [
             "#659AD2",
             "#00599C",
@@ -183,7 +183,7 @@
         "popularity": 48
     },
     "ghc": {
-        "path": "/bin/ghc",
+        "path": "ghc",
         "colors": [
             "#5F5287",
             "#453B60",
@@ -194,7 +194,7 @@
         "popularity": 15
     },
     "go": {
-        "path": "/bin/go",
+        "path": "go",
         "colors": [
             "#00acd7"
         ],
@@ -203,7 +203,7 @@
         "popularity": 55
     },
     "haskell": {
-        "path": "/bin/ghc",
+        "path": "ghc",
         "colors": [
             "#5F5287",
             "#453B60",
@@ -214,7 +214,7 @@
         "popularity": 52
     },
     "java": {
-        "path": "/bin/java",
+        "path": "java",
         "colors": [
             "#1665BF",
             "#F34336"
@@ -224,7 +224,7 @@
         "popularity": 116
     },
     "javascript": {
-        "path": "/bin/node",
+        "path": "node",
         "colors": [
             "#EED94C"
         ],
@@ -233,7 +233,7 @@
         "popularity": 107
     },
     "julia": {
-        "path": "/bin/julia",
+        "path": "julia",
         "colors": [
             "#9259A3",
             "#399746",
@@ -244,7 +244,7 @@
         "popularity": 29
     },
     "kotlin": {
-        "path": "/bin/kotlin",
+        "path": "kotlin",
         "colors": [
             "#7170FF",
             "#FE7959"
@@ -254,7 +254,7 @@
         "popularity": 41
     },
     "lua": {
-        "path": "/bin/lua",
+        "path": "lua",
         "colors": [
             "#00007f"
         ],
@@ -263,7 +263,7 @@
         "popularity": 68
     },
     "mariadb": {
-        "path": "/bin/mariadb",
+        "path": "mariadb",
         "colors": [
             "#003545"
         ],
@@ -272,7 +272,7 @@
         "popularity": 32
     },
     "mysql": {
-        "path": "/bin/mysql",
+        "path": "mysql",
         "colors": [
             "#00627E"
         ],
@@ -281,7 +281,7 @@
         "popularity": 66
     },
     "nodejs": {
-        "path": "/bin/node",
+        "path": "node",
         "colors": [
             "#8CC84B"
         ],
@@ -290,7 +290,7 @@
         "popularity": 48
     },
     "ocaml": {
-        "path": "/bin/ocaml",
+        "path": "ocaml",
         "colors": [
             "#EF7A06"
         ],
@@ -299,7 +299,7 @@
         "popularity": 31
     },
     "perl": {
-        "path": "/bin/perl",
+        "path": "perl",
         "colors": [
             "#393B5A"
         ],
@@ -308,7 +308,7 @@
         "popularity": 80
     },
     "php": {
-        "path": "/bin/php",
+        "path": "php",
         "colors": [
             "#7479AF"
         ],
@@ -317,7 +317,7 @@
         "popularity": 113
     },
     "powershell": {
-        "path": "/bin/pwsh",
+        "path": "pwsh",
         "colors": [
             "#0274B9"
         ],
@@ -326,7 +326,7 @@
         "popularity": 32
     },
     "prolog": {
-        "path": "/bin/swipl",
+        "path": "swipl",
         "colors": [
             "#E26E4D",
             "#959DA3"
@@ -336,7 +336,7 @@
         "popularity": 58
     },
     "python": {
-        "path": "/bin/python",
+        "path": "python",
         "colors": [
             "#ffd43B",
             "#306998"
@@ -346,7 +346,7 @@
         "popularity": 106
     },
     "r": {
-        "path": "/bin/R",
+        "path": "R",
         "colors": [
             "#2067B9",
             "#9999A1"
@@ -356,7 +356,7 @@
         "popularity": 54
     },
     "raku": {
-        "path": "/bin/rakudo",
+        "path": "rakudo",
         "colors": [
             "#ffff00",
             "#ff3366",
@@ -365,11 +365,12 @@
             "#000000",
             "#ffffff"
         ],
+        "regex": "(\\d+\\.\\d+)",
         "version": "--version",
         "popularity": 16
     },
     "ruby": {
-        "path": "/bin/ruby",
+        "path": "ruby",
         "colors": [
             "#d52420",
             "#860600",
@@ -380,7 +381,7 @@
         "popularity": 72
     },
     "rust": {
-        "path": "/bin/rustc",
+        "path": "rustc",
         "colors": [
             "#cd5314"
         ],
@@ -389,7 +390,7 @@
         "popularity": 44
     },
     "sass": {
-        "path": "/bin/sass",
+        "path": "sass",
         "colors": [
             "#C36698"
         ],
@@ -398,7 +399,7 @@
         "popularity": 21
     },
     "scala": {
-        "path": "/bin/scala",
+        "path": "scala",
         "colors": [
             "#DD3330",
             "#7E0B1C"
@@ -408,7 +409,7 @@
         "popularity": 41
     },
     "swift": {
-        "path": "/bin/swift",
+        "path": "swift",
         "colors": [
             "#FB3B26"
         ],
@@ -417,7 +418,7 @@
         "popularity": 45
     },
     "typescript": {
-        "path": "/bin/tsc",
+        "path": "tsc",
         "colors": [
             "#2E77C4"
         ],
@@ -426,7 +427,7 @@
         "popularity": 35
     },
     "zsh": {
-        "path": "/bin/zsh",
+        "path": "zsh",
         "colors": [
             "#F15A24"
         ],

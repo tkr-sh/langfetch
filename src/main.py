@@ -8,13 +8,14 @@ from .get_ascii_art import get_ascii_art
 from .get_params import get_argv
 from .print_infos import print_infos
 from os.path import isfile, expanduser
+import distutils.spawn
 
 
 # Load the language informations from the JSON
 if isfile("/".join(__file__.split("/")[:-1]) + "/" + "languages.json"):
     LANGUAGES_JSON = load(open("/".join(__file__.split("/")[:-1]) + "/" + "languages.json", 'r', encoding="utf-8"))
-elif isfile("/usr/share/langfetch/languages.json"):
-    LANGUAGES_JSON = load(open("/usr/share/langfetch/languages.json", 'r', encoding="utf-8"))
+elif isfile("/usr/local/share/langfetch/languages.json"):
+    LANGUAGES_JSON = load(open("/usr/local/share/langfetch/languages.json", 'r', encoding="utf-8"))
 else:
     logger.error("No languages.json file found")
     exit(127)
@@ -33,7 +34,7 @@ langs = []
 main_lang = "Python"
 max_popularity = -1
 for language, data in LANGUAGES_JSON.items():
-    if isfile(data["path"]):
+    if distutils.spawn.find_executable(data["path"]):
         langs.append(language)
 
         if data["popularity"] > max_popularity:

@@ -16,7 +16,7 @@ source=(
 sha256sums=( '1495f1a3784df47853981cd5707da1102703bcc28844781fa2b462d3428a205d' '551d614a962ea7b333e231bd852757e487a0500336fb105651efb3b9b9e79c26' )
 
 package() {
-  install -Dm755 main.py "${pkgdir}/usr/bin/${pkgname}"
-  install -Dm644 languages.json "${pkgdir}/usr/share/${pkgname}/languages.json"
+  install -Dm755 main.py "${pkgdir}/usr/local/bin/${pkgname}"
+  install -Dm644 languages.json "${pkgdir}/usr/local/share/${pkgname}/languages.json"
 }
 

@@ -15,7 +15,7 @@ langfetch is highly customizable and supports over 40 different languages. You c
 # Clone the repo
 git clone https://github.com/aderepas/langfetch
 # Go in the directory
-cd langfetch
+cd langfetch/src
 # Install
 # OR sudo make install
 make install

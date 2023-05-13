@@ -2,7 +2,7 @@
 cp main.py old_main.py
 
 # Replace the old content by the new one
-/usr/bin/python replace.py
+python replace.py
 
 sha=$(./makesha)
 sha=$(echo $sha | tr -d '\n')
