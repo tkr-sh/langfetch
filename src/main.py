@@ -8,7 +8,7 @@ from .get_ascii_art import get_ascii_art
 from .get_params import get_argv
 from .print_infos import print_infos
 from os.path import isfile, expanduser
-import distutils.spawn
+from distutils.spawn import find_executable
 
 
 # Load the language informations from the JSON
@@ -34,12 +34,13 @@ langs = []
 main_lang = "Python"
 max_popularity = -1
 for language, data in LANGUAGES_JSON.items():
-    if distutils.spawn.find_executable(data["path"]):
+    if find_executable(data["path"]) or find_executable("/usr/bin/" + data["path"]) or find_executable("/bin/" + data["path"]):
         langs.append(language)
 
         if data["popularity"] > max_popularity:
             max_popularity = data["popularity"]
             main_lang = language
+
 
 # langs = ["Python", "gcc", "Bash", "Perl"]
 # main_lang = "Python"
