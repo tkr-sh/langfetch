@@ -1,6 +1,7 @@
+# Maintainer: tkirishima <tkirishima@proton.me>
 pkgname=langfetch
 pkgver=0.0.1
-pkgrel=1
+pkgrel=2
 pkgdesc="A command-line tool to display the version of languages on your system"
 arch=("any")
 url="https://github.com/aderepas/langfetch"
@@ -10,13 +11,14 @@ depends=(
 )
 
 source=(
-  "main.py"
-  "languages.json"
+  "${pkgname}::git+$url.git"
 )
-sha256sums=( '1495f1a3784df47853981cd5707da1102703bcc28844781fa2b462d3428a205d' '551d614a962ea7b333e231bd852757e487a0500336fb105651efb3b9b9e79c26' )
+
+sha256sums=( 'SKIP' )
 
 package() {
-  install -Dm755 main.py "${pkgdir}/usr/local/bin/${pkgname}"
-  install -Dm644 languages.json "${pkgdir}/usr/local/share/${pkgname}/languages.json"
+  cd "${srcdir}/${pkgname}/src"
+  /usr/bin/python replace.py
+  install -Dm755 main.py "${pkgdir}/usr/bin/${pkgname}"
+  install -Dm644 languages.json "${pkgdir}/usr/share/${pkgname}/languages.json"
 }
-
