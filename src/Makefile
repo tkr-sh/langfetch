@@ -7,7 +7,7 @@ all:
 
 install:
 	@cp main.py old_main.py
-	@python replace.py
+	@python replace.py || python3 replace.py || /bin/python replace.py || /bin/python3 replace.py || /usr/bin/python replace.py || /usr/bin/python3 replace.py
 	# Create the directorys if they don't exist
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
 	@mkdir -p $(DESTDIR)$(MANDIR)/man1
