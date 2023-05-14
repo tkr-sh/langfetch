@@ -14,6 +14,8 @@ from distutils.spawn import find_executable
 # Load the language informations from the JSON
 if isfile("/".join(__file__.split("/")[:-1]) + "/" + "languages.json"):
     LANGUAGES_JSON = load(open("/".join(__file__.split("/")[:-1]) + "/" + "languages.json", 'r', encoding="utf-8"))
+elif isfile("/usr/share/langfetch/languages.json"):
+    LANGUAGES_JSON = load(open("/usr/share/langfetch/languages.json", 'r', encoding="utf-8"))
 elif isfile("/usr/local/share/langfetch/languages.json"):
     LANGUAGES_JSON = load(open("/usr/local/share/langfetch/languages.json", 'r', encoding="utf-8"))
 else:
